@@ -96,9 +96,10 @@ tsplot(second_order_diff, ylab=expression((x[t]-x[t-1]) - (x[t-1]-x[t-2])), type
 ![](ForecastingChicagoCrimes_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
 
 Year 2001 does not exhibit the same seasonal patterns and trends as the
-rest of the time. series. It deviates significantly from typical
-seasonal patterns, removing it may help improve the accuracy of
-forecasting models.
+rest of the time. series.
+
+It deviates significantly from typical seasonal patterns, removing it
+may help improve the accuracy of forecasting models.
 
 ``` r
 # filter data
@@ -1007,6 +1008,8 @@ sa101_011_12_model
 ``` r
 examine.mod(sa101_011_12_model, 1, 0, 1,0,1,1,12)
 ```
+
+Analyze model results
 
 ``` r
 mod_results_df <- data.frame(mod.name=c("MA(1)",
